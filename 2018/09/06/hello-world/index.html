@@ -22,7 +22,7 @@
         
     </title>
 
-    <link rel="canonical" href="http://force.com/blog/2018/09/06/hello-world/">
+    <link rel="canonical" href="http://force.github.io/blog/2018/09/06/hello-world/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/blog/css/bootstrap.min.css">
@@ -32,6 +32,7 @@
 
     <!-- Pygments Github CSS -->
     <link rel="stylesheet" href="/blog/css/syntax.css">
+    
     <!-- 百度统计代码 -->
     <script>
     var _hmt = _hmt || [];
@@ -86,6 +87,14 @@
                         <a href="/blog/">Home</a>
                     </li>
 					
+                    
+                        
+							
+                        <li>
+                            <a href="/blog/Tags/">Tags</a>
+                        </li>
+							
+						
                     
                         
 							
@@ -163,7 +172,10 @@
                          作者 Force
                         <span>
                           日期 2018-09-06
-                         </span>
+                        </span>
+                         <!-- 统计博文字数以及阅读时间 -->
+                        <span>字数: 73</span>
+                        <span class="post-count"> 阅读时长: 1 分钟</span>
                     </span>
                     <div class="tags text-center">
                         
@@ -215,25 +227,6 @@
 
                 <!--加入新的评论系统-->
                 
-                <!-- 来必力City版安装代码 -->
-                <div id="lv-container" data-id="city" data-uid="871139452@qq.com">
-                    <script type="text/javascript">
-                        (function(d, s) {
-                            var j, e = d.getElementsByTagName(s)[0];
-
-                            if (typeof LivereTower === 'function') { return; }
-
-                            j = d.createElement(s);
-                            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                            j.async = true;
-
-                            e.parentNode.insertBefore(j, e);
-                        })(document, 'script');
-                    </script>
-                    <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
-                </div>
-                <!-- City版安装代码已完成 -->
-                
 
                 
 
@@ -269,6 +262,12 @@
 
 
 
+<!-- 文章结束 -->
+
+    <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+
+<br>
+<hr>
 
 
 <!-- Footer -->
@@ -297,9 +296,9 @@
                     <br>
                     <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
                     <br>
-                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                    <!-- 统计博客总字数 -->
+                    <span class="post-count">博客全站共 73 字</span>
                 </p>
-
             </div>
         </div>
     </div>
@@ -330,7 +329,7 @@
 <script>
     // only load tagcloud.js in tag.html
     if($('#tag_cloud').length !== 0){
-        async("http://force.com/blog/js/jquery.tagcloud.js",function(){
+        async("http://force.github.io/blog/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {
                 //size: {start: 1, end: 1, unit: 'em'},
                 color: {start: '#bbbbee', end: '#0085a1'},
@@ -366,7 +365,8 @@
 </script>
 
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
+<!-- 动态背景 -->
+<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 <!--wechat title img-->
 <img class="wechat-title-img" src="">
 </body>

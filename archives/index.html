@@ -22,7 +22,7 @@
         
     </title>
 
-    <link rel="canonical" href="http://force.com/blog/archives/">
+    <link rel="canonical" href="http://force.github.io/blog/archives/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/blog/css/bootstrap.min.css">
@@ -32,6 +32,7 @@
 
     <!-- Pygments Github CSS -->
     <link rel="stylesheet" href="/blog/css/syntax.css">
+    
     <!-- 百度统计代码 -->
     <script>
     var _hmt = _hmt || [];
@@ -86,6 +87,14 @@
                         <a href="/blog/">Home</a>
                     </li>
 					
+                    
+                        
+							
+                        <li>
+                            <a href="/blog/Tags/">Tags</a>
+                        </li>
+							
+						
                     
                         
 							
@@ -311,9 +320,9 @@
                     <br>
                     <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
                     <br>
-                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                    <!-- 统计博客总字数 -->
+                    <span class="post-count">博客全站共 73 字</span>
                 </p>
-
             </div>
         </div>
     </div>
@@ -344,7 +353,7 @@
 <script>
     // only load tagcloud.js in tag.html
     if($('#tag_cloud').length !== 0){
-        async("http://force.com/blog/js/jquery.tagcloud.js",function(){
+        async("http://force.github.io/blog/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {
                 //size: {start: 1, end: 1, unit: 'em'},
                 color: {start: '#bbbbee', end: '#0085a1'},
@@ -380,7 +389,8 @@
 </script>
 
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
+<!-- 动态背景 -->
+<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 <!--wechat title img-->
 <img class="wechat-title-img" src="">
 </body>
