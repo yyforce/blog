@@ -90,7 +90,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536510379344&di=7f96674d324d864c9b067115865394b0&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01c6a6554b9244000001bf72c92ab6.jpg%402o.jpg"黑白星空"">
 <meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536510379344&di=7f96674d324d864c9b067115865394b0&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01c6a6554b9244000001bf72c92ab6.jpg%402o.jpg">
-<meta property="og:updated_time" content="2018-09-09T14:39:18.052Z">
+<meta property="og:updated_time" content="2018-09-09T14:43:13.570Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown语法文档">
 <meta name="twitter:description" content="一、标题下面是用法123456# 这是一级标题## 这是二级标题### 这是三级标题#### 这是四级标题##### 这是五级标题###### 这是六级标题">
@@ -539,17 +539,9 @@
 </blockquote></p>
 <p><strong>2.突破容器宽度限制的图片</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- HTML方式: 直接在 Markdown 文件中编写 HTML 来调用 --&gt;</span><br><span class="line">&lt;!-- 其中 class=&quot;full-image&quot; 是必须的 --&gt;</span><br><span class="line">&lt;img src=&quot;/image-url&quot; class=&quot;full-image&quot; /&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 标签 方式，要求版本在0.4.5或以上 --&gt;</span><br><span class="line">&#123;% fullimage /image-url, alt, title %&#125;</span><br><span class="line"></span><br><span class="line">&lt;!-- 别名 --&gt;</span><br><span class="line">&#123;% fi /image-url, alt, title %&#125;</span><br></pre></td></tr></table></figure></p>
 <p><strong>效果如下:</strong><br><span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536510379344&di=7f96674d324d864c9b067115865394b0&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01c6a6554b9244000001bf72c92ab6.jpg%402o.jpg" class="full-image" alt="星空" title="黑白星空"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span></p>
-<p><strong>3.Bootstrap Callout</strong><br><strong>使用方法:</strong><br>`<div class="note class_name"><p>Content (md partial supported) </p></div>`
-其中，class_name 可以是以下列表中的一个值：
-default
-primary
-success
-info
-warning
-danger
-
-**效果如下:**
-<div class="note success"><p>成功! </p></div></p>
+<p><strong>3.Bootstrap Callout</strong><br><strong>使用方法:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note class_name %&#125; Content (md partial supported) &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>其中，class_name 可以是以下列表中的一个值：<br>default<br>primary<br>success<br>info<br>warning<br>danger</p>
+<p><strong>效果如下:</strong><br><div class="note success"><p>成功! </p></div></p>
 
       
     </div>
