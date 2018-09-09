@@ -139,7 +139,8 @@
     $("body").click(function(e) { 
       var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善"); 
       var $i = $("<span/>").text(a[a_idx]); a_idx = (a_idx + 1) % a.length; 
-      var x = e.pageX, y = e.pageY; $i.css({ "z-index": 999999999999999999999999999999999999999999999999999999999999999999999, "top": y - 20, "left": x, "position": "absolute", "font-weight": "bold", "color": "#ff6651" }); 
+      var x = e.pageX, y = e.pageY; 
+      $i.css({ "z-index": 999999999999999999999999999999999999999999999999999999999999999999999, "top": y - 20, "left": x, "position": "absolute", "font-weight": "bold", "color": "#ff6651" }); 
       $("body").append($i); 
       $i.animate({ 
         "top": y - 180, "opacity": 0 }, 
@@ -336,10 +337,10 @@
         
           <div class="category-all-page">
             <div class="category-all-title">
-                目前共计 1 个分类
+                暂无分类
             </div>
             <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/javascript/">javascript</a><span class="category-list-count">2</span></li></ul>
+              
             </div>
           </div>
         
@@ -403,32 +404,14 @@
               
                 <a href="/blog/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
             
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/blog/categories/index.html">
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
 
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/blog/tags/index.html">
-                  <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
             
 
           </nav>
